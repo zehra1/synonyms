@@ -1,0 +1,9 @@
+C:\Users\ThinkBook G2\source\repos\synonymsAPI\synonyms.Model\bin\Debug\netcoreapp3.1\synonyms.Model.deps.json
+C:\Users\ThinkBook G2\source\repos\synonymsAPI\synonyms.Model\bin\Debug\netcoreapp3.1\synonyms.Model.dll
+C:\Users\ThinkBook G2\source\repos\synonymsAPI\synonyms.Model\bin\Debug\netcoreapp3.1\synonyms.Model.pdb
+C:\Users\ThinkBook G2\source\repos\synonymsAPI\synonyms.Model\obj\Debug\netcoreapp3.1\synonyms.Model.csprojAssemblyReference.cache
+C:\Users\ThinkBook G2\source\repos\synonymsAPI\synonyms.Model\obj\Debug\netcoreapp3.1\synonyms.Model.AssemblyInfoInputs.cache
+C:\Users\ThinkBook G2\source\repos\synonymsAPI\synonyms.Model\obj\Debug\netcoreapp3.1\synonyms.Model.AssemblyInfo.cs
+C:\Users\ThinkBook G2\source\repos\synonymsAPI\synonyms.Model\obj\Debug\netcoreapp3.1\synonyms.Model.csproj.CoreCompileInputs.cache
+C:\Users\ThinkBook G2\source\repos\synonymsAPI\synonyms.Model\obj\Debug\netcoreapp3.1\synonyms.Model.dll
+C:\Users\ThinkBook G2\source\repos\synonymsAPI\synonyms.Model\obj\Debug\netcoreapp3.1\synonyms.Model.pdb

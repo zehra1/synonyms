@@ -1,0 +1,8 @@
+<div *ngIf="showAddButton" class="flex">
+    <button mat-button (click)="openDialog()">
+        <mat-icon class="material-icons-outlined">library_add</mat-icon> Add synonyms
+    </button>
+
+</div>
+<app-search (searchTermChange)="handleSearchTermChange($event)"></app-search>
+<app-synonyms-list *ngIf="searchTerm" [list]="synonymsList$ | async" [searchTerm]="searchTerm"></app-synonyms-list>

@@ -1,0 +1,21 @@
+<mat-form-field class="example-chip-list" appearance="fill">
+  <mat-label>Synonyms</mat-label>
+  <mat-chip-list #chipList>
+    <mat-chip (removed)="remove(word)" *ngFor="let word of words">
+      {{word}}
+      <button matChipRemove>
+        <mat-icon>cancel</mat-icon>
+      </button>
+    </mat-chip>
+
+      <input matInput required placeholder="Add new synonyms" [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+      (matChipInputTokenEnd)="add($event)">
+    </mat-chip-list>
+    <mat-hint align="start">Separate words with comma or enter</mat-hint>
+  </mat-form-field>
+  <mat-error *ngIf="words.length == 1">
+      You have to enter at least one more word
+  </mat-error>
+<button mat-button [disabled]="words.length < 2" (click)="onSubmit()" class="right">
+  <mat-icon class="material-icons-outlined">library_add</mat-icon> Add synonyms
+</button>

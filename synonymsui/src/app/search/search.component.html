@@ -1,0 +1,14 @@
+<div class="wrapper" [ngClass]="{'move-up': isButtonClicked}">
+  <h1 [ngClass]="{'dissapear': isButtonClicked}">SynonymsAPI</h1>
+  <div class="main">
+    <mat-form-field class="example-form-field">
+      <input matInput type="text" placeholder="Search for synonyms" [formControl]="searchTerm" (keyup.enter)="handleSearchTerm()">
+      <button mat-button *ngIf="searchTerm.value" matSuffix mat-icon-button aria-label="Clear" (click)="clearInput()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <div class="search-button" (click)="handleSearchTerm()" *ngIf="searchTerm.value" [@inOutAnimation]>
+      <mat-icon>chevron_right</mat-icon>
+    </div>
+  </div>
+</div>

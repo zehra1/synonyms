@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <div class="spinner" *ngIf="loading">
+    <mat-spinner diameter="50"></mat-spinner>
+  </div>
+  <ng-container *ngIf="!loading">
+
+    <h1> <span class="txt-span">synonyms for word</span> {{ searchTerm }}</h1>
+    <mat-chip-list>
+      <mat-chip *ngFor="let item of list">
+        {{ item.name }}
+      </mat-chip>
+    </mat-chip-list>
+
+    <div class="note" *ngIf="list?.length == 0 && !loading">
+      <span>There is no synonyms matching search term.</span>
+      <span>Try with another word.</span>
+    </div>
+  </ng-container>
+
+</div>
